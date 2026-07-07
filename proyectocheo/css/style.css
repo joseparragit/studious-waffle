@@ -1,0 +1,95 @@
+/* =========================
+   1) Variables / Temas
+   ========================= */
+:root{
+  --primario: #fcf8a6;
+  --secundario: #ffffff;
+  --acento: #0fb0b3;
+}
+*{
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+/* =========================
+   2) Base (body, tipografías)
+   ========================= */
+body{
+  font-family: "Abel", sans-serif;
+  color: var(--secundario);
+
+  background-image: url("../assets/fondo.jpg");
+  background-size: cover;
+  background-position: center;
+  background-attachment: fixed;
+}
+
+h1, h2, h3{
+  color: var(--primario);
+}
+
+/* =========================
+   3) Layout Header / Hero
+   ========================= */
+.header-principal{
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+  position: relative;
+}
+
+/* =========================
+   4) Overlay para legibilidad y prensentacion
+   ========================= */
+body::before {
+  content: "";
+  position: fixed;
+  inset: 0;
+  background: rgba(0 , 0, 0, 0.35); /* ajustá 0.35 - 0.65 */
+  z-index: 0;
+  pointer-events: none;
+}
+
+.header-principal img,
+.header-principal nav,
+.header-principal ul{
+  position: relative;
+  z-index: 0;
+}
+
+/* =========================
+   5) Navegación del menú 
+   ========================= */
+.navbar{
+  display: flex;
+  justify-content: space-between; /* o space-between si tenés logo */
+  
+}
+
+.navbar ul{
+  list-style: none;
+  padding: 0;
+  margin: 0;
+  display: flex;
+  flex-direction: row;
+  gap: 20px;
+  align-items: center;
+}
+.navbar a{
+  text-decoration: none;
+  color: var(--primario);
+}
+#inicio .contenido-inicio{
+  display: flex;
+  gap: 24px;
+  align-items: center;
+  justify-content: center;
+}
+@media (max-width: 700px){
+  #inicio .contenido-inicio{
+    flex-direction: column;
+  }
+}
