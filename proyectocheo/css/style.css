@@ -77,10 +77,15 @@ body::before {
   flex-direction: row;
   gap: 20px;
   align-items: center;
+  list-style: none;
+  display: flex;         /* los enlaces en fila */
+  padding: 0;
 }
+
 .navbar a{
   text-decoration: none;
   color: var(--primario);
+  
 }
 #inicio .contenido-inicio{
   display: flex;
