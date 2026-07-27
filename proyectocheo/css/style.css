@@ -183,14 +183,4 @@ footer{
     padding: 16px 16px;/* también baja el padding lateral */
     flex-wrap: wrap;   /* opcional: evita overflow si no entra */
   }
-  @media (min-width: 768px){
-  .header-principal{
-    gap: 24px;
-    padding: 24px 40px;
-    flex-wrap: nowrap; /* opcional, para mantenerlo en una fila */
-  }
-  .navbar ul{
-    gap: 150px;
-    flex-wrap: wrap; /* o mantenelo wrap como ahora */
-  }
-}
+  
