@@ -88,11 +88,20 @@ body::before {
   width: 100%;
 }
 .imagen-inicio img{
+  max-width: 80%;
+  height: auto;
+  display: block;
+ }
+.imagen-index{
+  width: 30%;
+}
+.imagen-index img{
+  width: 100%;
   max-width: 100%;
   height: auto;
   display: block;
+  object-fit: contain;
 }
-
  .contenido-inicio{
   padding: 0; 
 }
@@ -163,7 +172,7 @@ footer{
   margin-top: 16px;
 }
 .habilidad-card{
-  border: 1px solid rgb(255, 255, 255);
+  border: 1px solid rgb(226, 183, 90);
   background: rgba(255, 255, 255, 0.204);
   padding: 16px;
   border-radius: 12px;
