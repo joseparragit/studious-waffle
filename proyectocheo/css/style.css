@@ -192,4 +192,15 @@ footer{
     padding: 16px 16px;/* también baja el padding lateral */
     flex-wrap: wrap;   /* opcional: evita overflow si no entra */
   }
-  
+  .navbar.bg-dark-subtle{
+  background-color: #21252937 !important; /* negro clarito */
+}
+.navbar-dark .nav-link{
+  color: #fff !important;
+}
+.navbar-dark .nav-link:hover{
+  color: #000000 !important;
+}
+.d-block{
+  width: 100%;
+}
