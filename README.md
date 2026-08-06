@@ -14,7 +14,8 @@ Este portafolio es una página personal para presentar mi perfil como Desarrolla
 ## Tecnologías
 - HTML
 - CSS (incluye CSS Grid y Media Queries)
-- (Agregá lo que realmente uses en tu proyecto)
+- Bootstrap 
+- SCSS
 
 ## Objetivo
 Que cualquier persona pueda entender rápidamente quién soy, ver ejemplos de mi trabajo y contactarme.
