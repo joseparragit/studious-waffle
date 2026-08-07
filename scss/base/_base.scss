@@ -1,0 +1,29 @@
+
+:root{
+  --primario: #fcf8a6;
+  --secundario: #f9ff4aba;
+  --acento: #0fb0b3;
+}
+
+*{
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+/* =========================
+   2) Base (body, tipografías)
+   ========================= */
+body{
+  font-family: "Abel", sans-serif;
+  color: var(--secundario);
+
+  background-image: url("../assets/fondo.jpg");
+  background-size: cover;
+  background-position: center;
+  background-attachment: fixed;
+}
+
+h1, h2, h3{
+  color: var(--primario);
+}

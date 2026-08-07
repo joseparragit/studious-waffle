@@ -141,15 +141,15 @@ footer{
 }
 
   /* 2) Page grid: asegurar áreas y espacio */
-  .page-grid{
-    grid-template-rows: auto 1fr auto;
-     display: grid;
+ .page-grid{
+  min-height: 100vh;
+  display: grid;
+  grid-template-rows: auto 1fr auto;
   grid-template-areas:
     "header"
     "main"
     "footer";
-  grid-template-rows: auto 1fr auto;
-  }
+}
 
   /* 3) Header: mantener en desktop la fila (si en mobile llegara a cambiar) */
   .header-principal{
@@ -176,6 +176,7 @@ footer{
 }
 .section-principal{
   padding: 40px 24px;
+  color: #f0f8ff;
 }
 .habilidades{
   display: grid;
