@@ -8,12 +8,18 @@
   align-items: center;
   justify-content: center;
   flex-wrap: wrap;
-
 }
 
 .navbar a{
   text-decoration: none;
   color: var(--primario);
   display: inline-block;
-  padding: 0px 0; /* o 6px 0 */
+  padding: 0px 0;
+}
+
+.navbar.bg-dark-subtle{
+  background-color: #21252937 !important;
+}
+.navbar-dark .nav-link{
+  color: #f6e575db !important;
 }
