@@ -1,5 +1,5 @@
-@use "utilities/variables";
-@use "base/base";
+@use "base/variables" as *;
+@use "components/buttons" as *;
 @use "layout/header";
 @use "layout/footer";
 @use "components/buttons";

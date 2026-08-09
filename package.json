@@ -1,9 +1,6 @@
 {
   "scripts": {
-    "build:css": "sass utilities/main.scss css/style.css --no-source-map",
-    "watch:css": "sass --watch utilities/main.scss:css/style.css"
-  },
-  "devDependencies": {
-    "sass": "^1.102.0"
+    "build:css": "sass .\\scss\\main.scss .\\css\\style.css --no-source-map",
+    "watch:css": "sass --watch .\\scss\\main.scss:.\\css\\style.css"
   }
 }
