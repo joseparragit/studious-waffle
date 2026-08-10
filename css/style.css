@@ -65,7 +65,7 @@ footer {
   color: var(--secundario);
 }
 .btn:hover {
-  opacity: 0.9;
+  opacity: 1;
 }
 
 /* Layout Header / Hero */
@@ -172,3 +172,5 @@ body::before {
 footer {
   grid-area: footer;
 }
+
+/*# sourceMappingURL=style.css.map */
