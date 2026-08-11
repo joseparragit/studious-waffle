@@ -1,5 +1,7 @@
 @use "base/variables" as *;
+@use "base/tipografia" as *;
 @use "components/buttons" as *;
 @use "layout/header";
-@use "layout/footer";
-@use "components/buttons";
+@use "layout/footer" as *;
+@use "components/buttons" as *;
+@use "utilities/mixins" as * ;
