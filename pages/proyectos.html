@@ -1,0 +1,110 @@
+<!DOCTYPE html>
+<html lang="es">
+  <head>
+     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-sRIl4kxILFvY47J16cr9ZwB07vP4J8+LH7qKQnuqkuIAvNWLzeN8tE5YBujZqJLB" crossorigin="anonymous">
+     <link rel="stylesheet" href="../css/style.css">
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Proyectos - JOSE PARRA</title>
+  </head>
+
+ <body> 
+  <div class="page-grid">
+   <header class="header-principal">
+  <img src="../assets/logo.png" class="logo" alt="Logo" width="250" >
+    <nav class="navbar navbar-expand-lg bg-dark-subtle navbar-dark">
+      <div class="container-fluid">
+      <a class="navbar-brand" href="#">
+      <!-- podés dejar el logo acá si querés, o dejarlo solo en tu header -->
+    </a>
+
+   <button
+      class="navbar-toggler"
+      type="button"
+      data-bs-toggle="collapse"
+      data-bs-target="#navbarQwerty"
+      aria-controls="navbarQwerty"
+      aria-expanded="false"
+      aria-label="Toggle navigation"
+    >
+      <span class="navbar-toggler-icon"></span>
+    </button>
+
+
+    <div class="collapse navbar-collapse" id="navbarQwerty">
+      <ul class="navbar-nav ms-auto mb-2 mb-lg-0">
+        <li class="nav-item"><a class="nav-link" href="../index.html">Inicio</a></li>
+        <li class="nav-item"><a class="nav-link" href="sobre_mi.html">Sobre mí</a></li>
+        <li class="nav-item"><a class="nav-link" href="proyectos.html">Proyectos</a></li>
+        <li class="nav-item"><a class="nav-link" href="formacion.html">Formación</a></li>
+        <li class="nav-item"><a class="nav-link" href="contactos.html">Contacto</a></li>
+      </ul>
+    </div>
+  </div>
+</nav>
+  
+    </header>
+
+    <main>
+     <section id="galeria" class="py-4">
+  <div class="container">
+    <h2 class="mb-3">Galería</h2>
+    <div id="carouselGaleria" class="carousel slide" data-bs-ride="carousel">
+      <div class="carousel-inner">
+        <div class="carousel-item active">
+          <img src="../assets/img1.png"
+     class="d-block mx-auto"
+     style="width: 70%; height: auto; object-fit: cover;"
+     alt="Imagen 1">
+        </div>
+        <div class="carousel-item">
+          <img src="../assets/img2.png"
+     class="d-block mx-auto"
+     style="width: 70%; height: auto; object-fit: cover;"
+     alt="Imagen 1">
+        </div>
+        <div class="carousel-item">
+          <img src="../assets/img3.png"
+     class="d-block mx-auto"
+     style="width: 70%; height: auto; object-fit: cover;"
+     alt="Imagen 1">
+        </div>
+      </div>
+      <button class="carousel-control-prev" type="button" data-bs-target="#carouselGaleria" data-bs-slide="prev">
+        <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+        <span class="visually-hidden">Anterior</span>
+      </button>
+      <button class="carousel-control-next" type="button" data-bs-target="#carouselGaleria" data-bs-slide="next">
+        <span class="carousel-control-next-icon" aria-hidden="true"></span>
+        <span class="visually-hidden">Siguiente</span>
+      </button>
+    </div>
+  </div>
+</section>
+    </main>
+
+    <footer>
+      <p>
+        © <span id="year"></span> JOSE PARRA — Todos los derechos reservados.
+      </p>
+
+       <ul>
+        <li>
+          <a href="https://www.linkedin.com/in/jose-parra-7b1104412/" target="_blank" rel="noopener">
+            LinkedIn-JOSE PARRA
+          </a>
+        </li>
+        <li>
+         <a href="https://github.com/joseparragit" target="_blank" rel="noopener">
+          GitHub-JOSE PARRA
+         </a>
+        </li>
+        </ul>
+      <script>
+        document.getElementById("year").textContent = new Date().getFullYear();
+      </script>
+      <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/js/bootstrap.bundle.min.js" integrity="sha384-FKyoEForCGlyvwx9Hj09JcYn3nv7wiPVlz7YYwJrWVcXK/BmnVDxM+D2scQbITxI" crossorigin="anonymous"></script>
+    </footer>
+    </div>
+  </body>
+</html>

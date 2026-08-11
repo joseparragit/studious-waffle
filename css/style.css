@@ -1,113 +1,82 @@
-@charset "UTF-8";
-:root {
+/* =========================
+   1) Variables / Temas
+   ========================= */
+:root{
   --primario: #fcf8a6;
   --secundario: #f9ff4aba;
   --acento: #0fb0b3;
 }
-
-* {
+*{
   margin: 0;
   padding: 0;
   box-sizing: border-box;
 }
-
 /* =========================
    2) Base (body, tipografías)
    ========================= */
-body {
+body{
   font-family: "Abel", sans-serif;
   color: var(--secundario);
+
   background-image: url("../assets/fondo.jpg");
   background-size: cover;
   background-position: center;
   background-attachment: fixed;
 }
 
-h1, h2, h3 {
+h1, h2, h3{
   color: var(--primario);
 }
 
-.header-principal {
-  grid-area: header;
-}
-
-main {
-  grid-area: main;
-}
-
-footer {
-  grid-area: footer;
-}
-
-.page-grid {
-  grid-template-rows: auto 1fr auto;
-  display: grid;
-  grid-template-areas: "header" "main" "footer";
-  grid-template-rows: auto 1fr auto;
-}
-
-#inicio .contenido-inicio {
-  display: grid;
-  grid-template-columns: 1fr; /* mobile base */
-  gap: 24px;
-  align-items: center;
-  justify-items: start;
-  color: #f0f8ff;
-}
-
-@media (min-width: 1024px) {
-  #inicio .contenido-inicio {
-    grid-template-columns: 1fr 1fr;
-  }
-}
-.btn {
-  background: var(--primario);
-  color: var(--secundario);
-}
-.btn:hover {
-  opacity: 1;
-}
-
-/* Layout Header / Hero */
-.header-principal {
+/* =========================
+   3) Layout Header / Hero
+   ========================= */
+.header-principal{
   width: 100%;
   position: relative;
   display: flex;
   flex-direction: row;
   justify-content: space-between;
   align-items: center;
+
   gap: 24px;
   padding: 24px 40px;
   min-height: 100vh;
 }
 
-@media (max-width: 576px) {
-  .header-principal {
+/* ajustes */
+@media (max-width: 576px){
+  .header-principal{
     gap: 12px;
     padding: 16px 16px;
     flex-wrap: wrap;
     min-height: auto;
   }
 }
-/* Overlay para legibilidad */
+
+/* =========================
+   4) Overlay para legibilidad y prensentacion
+   ========================= */
 body::before {
   content: "";
   position: fixed;
   inset: 0;
-  background: rgba(0, 0, 0, 0.35);
+  background: rgba(0 , 0, 0, 0.35); /* ajustá 0.35 - 0.65 */
   z-index: 0;
   pointer-events: none;
 }
 
 .header-principal img,
 .header-principal nav,
-.header-principal ul {
+.header-principal ul{
   position: relative;
   z-index: 0;
 }
 
-/* Navegación */
-.navbar ul {
+/* =========================
+   5) Navegación del menú 
+   ========================= */
+.navbar ul{
   list-style: none;
   margin: 0;
   padding: 0;
@@ -117,60 +86,126 @@ body::before {
   align-items: center;
   justify-content: center;
   flex-wrap: wrap;
+
 }
 
-.navbar a {
+.navbar a{
   text-decoration: none;
   color: var(--primario);
   display: inline-block;
-  padding: 0px 0;
+  padding: 0px 0; /* o 6px 0 */
 }
-
-.navbar.bg-dark-subtle {
-  background-color: rgba(33, 37, 41, 0.2156862745) !important;
-}
-
-.navbar-dark .nav-link {
-  color: rgba(246, 229, 117, 0.8588235294) !important;
-}
-
-/* Imágenes / contenido del hero */
-.imagen-inicio {
+.imagen-inicio{
   width: 100%;
 }
-
-.imagen-inicio img {
+.imagen-inicio img{
   max-width: 80%;
   height: auto;
   display: block;
-}
-
-.imagen-index {
+ }
+.imagen-index{
   width: 30%;
 }
-
-.imagen-index img {
+.imagen-index img{
   width: 100%;
   max-width: 100%;
   height: auto;
   display: block;
   object-fit: contain;
 }
-
-.contenido-inicio {
-  padding: 0;
+ .contenido-inicio{
+  padding: 0; 
 }
-
-.section-principal {
+.section-principal{
   padding: 40px 24px;
 }
+.header-principal{ grid-area: header; }
+main{ grid-area: main; } 
 
-.header-principal {
-  grid-area: header;
-}
-
-footer {
+footer{
   grid-area: footer;
 }
 
-/*# sourceMappingURL=style.css.map */
+#inicio .contenido-inicio{
+  display: grid;
+  grid-template-columns: 1fr; /* mobile base */
+  gap: 24px;
+  align-items: center;
+  justify-items: start;
+  color: #f0f8ff;
+}
+@media (min-width: 1024px){
+  #inicio .contenido-inicio{
+    grid-template-columns: 1fr 1fr;
+  }
+}
+
+  /* 2) Page grid: asegurar áreas y espacio */
+ .page-grid{
+  min-height: 100vh;
+  display: grid;
+  grid-template-rows: auto 1fr auto;
+  grid-template-areas:
+    "header"
+    "main"
+    "footer";
+}
+
+  /* 3) Header: mantener en desktop la fila (si en mobile llegara a cambiar) */
+  .header-principal{
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    min-height: auto;
+  }
+/* base (mobile) */
+
+.proyecto{
+  background: rgba(183, 198, 22, 0.1);
+  border: 1px solid rgba(255,255,255,0.2);
+  padding: 16px;
+  border-radius: 12px;
+}
+/* desktop */
+.proyectos{
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(250px, 1fr));
+  gap: 16px;
+  margin-top: 24px;
+
+}
+.section-principal{
+  padding: 40px 24px;
+  color: #f0f8ff;
+}
+.habilidades{
+  display: grid;
+  grid-template-columns: 1fr;
+  gap: 16px;
+  margin-top: 16px;
+}
+.habilidad-card{
+  border: 1px solid rgb(226, 183, 90);
+  background: rgba(255, 255, 255, 0.204);
+  padding: 16px;
+  border-radius: 12px;
+}
+.habilidad-card h3{
+  margin-bottom: 8px;
+}
+
+.logo{
+  width: clamp(80px, 12vw, 140px);
+  height: auto;
+  object-fit: contain;
+}
+
+.header-principal{
+    gap: 12px;          /* más chico */
+    padding: 16px 16px;/* también baja el padding lateral */
+    flex-wrap: wrap;   /* opcional: evita overflow si no entra */
+  }
+  .navbar.bg-dark-subtle{
+  background-color: #21252937 !important; /* negro clarito */
+}
+.navbar-dark .nav-link{ color: #f6e575db !important; }
