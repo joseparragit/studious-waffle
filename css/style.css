@@ -1,4 +1,4 @@
-@charset "UTF-8";
+
 * {
   margin: 0;
   padding: 0;
@@ -166,5 +166,3 @@ body::before {
 footer {
   grid-area: footer;
 }
-
-/*# sourceMappingURL=style.css.map */
