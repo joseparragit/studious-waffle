@@ -1,6 +1,6 @@
-
+@charset "UTF-8";
 * {
-  margin: 0;
+  margin: 5px;
   padding: 0;
   box-sizing: border-box;
 }
@@ -18,7 +18,7 @@ body {
 }
 
 h1, h2, h3 {
-  color: var(#fcf8a6);
+  color: var(#efe759);
 }
 
 .header-principal {
@@ -166,3 +166,15 @@ body::before {
 footer {
   grid-area: footer;
 }
+
+/* 
+$color-primario: #fcf8a6;
+$color-secundario: #f9ff4aba;
+$fuente-principal: "Abel", sans-serif;
+ */
+.logo {
+  width: 150px;
+  height: auto;
+}
+
+/*# sourceMappingURL=style.css.map */

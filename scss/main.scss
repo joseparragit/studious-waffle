@@ -3,7 +3,16 @@
 @use "components/buttons" as *;
 @use "layout/header";
 @use "layout/footer" as *;
-@use "components/buttons" as *;
 @use "utilities/mixins" as * ;
-@use "utilities/variables"
 
+
+/* 
+$color-primario: #fcf8a6;
+$color-secundario: #f9ff4aba;
+$fuente-principal: "Abel", sans-serif;
+ */
+ .logo{
+  width: 150px;
+  height: auto;
+    
+ }
