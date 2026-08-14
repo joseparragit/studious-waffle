@@ -14,17 +14,15 @@ $color-acento: #0fb0b3;
    ========================= */
 body{
   font-family: "Abel", sans-serif;
-  color: var(--secundario);
-
+  color: $color-secundario;
   background-image: url("../assets/fondo.jpg");
   background-size: cover;
   background-position: center;
   background-attachment: fixed;
 }
 
-h1, h2, h3{
-  color: var(--primario);
-}
+h1, h2, h3 { color: var(#fcf8a6); }
+
 
 .header-principal{ grid-area: header; }
 main{ grid-area: main; } 
