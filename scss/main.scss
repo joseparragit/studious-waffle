@@ -4,7 +4,7 @@
 @use "layout/header";
 @use "layout/footer" as *;
 @use "utilities/mixins" as * ;
-
+@use "components/cards" as * ;
 
 /* 
 $color-primario: #fcf8a6;
@@ -16,3 +16,4 @@ $fuente-principal: "Abel", sans-serif;
   height: auto;
     
  }
+ 

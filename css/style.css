@@ -1,6 +1,6 @@
 @charset "UTF-8";
 * {
-  margin: 5px;
+  margin: 10px;
   padding: 0;
   box-sizing: border-box;
 }
@@ -10,7 +10,7 @@
    ========================= */
 body {
   font-family: "Abel", sans-serif;
-  color: rgba(249, 255, 74, 0.7294117647);
+  color: rgba(249, 254, 113, 0.729);
   background-image: url("../assets/fondo.jpg");
   background-size: cover;
   background-position: center;
@@ -18,7 +18,7 @@ body {
 }
 
 h1, h2, h3 {
-  color: var(#efe759);
+  color: var(#fcf8a6);
 }
 
 .header-principal {
@@ -176,5 +176,3 @@ $fuente-principal: "Abel", sans-serif;
   width: 150px;
   height: auto;
 }
-
-/*# sourceMappingURL=style.css.map */
