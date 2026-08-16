@@ -17,4 +17,60 @@ $fuente-principal: "Abel", sans-serif;
   height: auto;
     
  }
- 
+ nav.navbar {
+  background-color: #111827; // reemplazá por tu color si tenés variables
+  border-bottom: 1px solid rgba(255, 255, 255, 0.08);
+}
+
+nav.navbar .navbar-brand {
+  font-weight: 700;
+  color: #fff;
+
+  &:hover {
+    color: rgba(255, 255, 255, 0.85);
+  }
+}
+
+nav.navbar .navbar-nav .nav-link {
+  color: rgba(255, 255, 255, 0.85);
+  padding: 0.65rem 0.9rem;
+  border-radius: 10px;
+
+  &:hover {
+    color: #fff;
+    background: rgba(255, 255, 255, 0.08);
+  }
+
+  &.active {
+    color: #fff;
+    background: rgba(255, 255, 255, 0.12);
+  }
+}
+
+// opcional: el fondo del menú desplegado
+nav.navbar .navbar-collapse {
+  padding-top: 0.75rem;
+  padding-bottom: 0.75rem;
+}
+body::before {
+  content: "";
+  position: fixed;
+  inset: 0;
+  background: rgba(0, 0, 0, 0); // o el overlay que querés
+  z-index: 2;
+  pointer-events: none;
+}
+.hero {
+  position: relative;
+}
+.hero::before {
+  content: "";
+  position: absolute;
+  inset: 0;
+  background: rgba(0,0,0,0.4);
+  z-index: 1;
+}
+.hero__content {
+  position: relative;
+  z-index: 2;
+}

@@ -157,6 +157,7 @@ body::before {
 
 .section-principal {
   padding: 40px 24px;
+  color: #f0f8ff;
 }
 
 .header-principal {
@@ -165,6 +166,8 @@ body::before {
 
 footer {
   grid-area: footer;
+  color:#f0f8ff ;
+
 }
 
 .habilidades {
@@ -194,6 +197,47 @@ footer {
 .logo {
   width: 150px;
   height: auto;
+}
+
+nav.navbar {
+  background-color: #111827;
+  border-bottom: 1px solid rgba(255, 255, 255, 0.08);
+}
+
+nav.navbar .navbar-brand {
+  font-weight: 700;
+  color: #fff;
+}
+nav.navbar .navbar-brand:hover {
+  color: rgba(255, 255, 255, 0.85);
+}
+
+nav.navbar .navbar-nav .nav-link {
+  color: rgba(255, 255, 255, 0.85);
+  padding: 0.65rem 0.9rem;
+  border-radius: 10px;
+}
+nav.navbar .navbar-nav .nav-link:hover {
+  color: #fff;
+  background: rgba(255, 255, 255, 0.08);
+}
+nav.navbar .navbar-nav .nav-link.active {
+  color: #fff;
+  background: rgba(255, 255, 255, 0.12);
+}
+
+nav.navbar .navbar-collapse {
+  padding-top: 0.75rem;
+  padding-bottom: 0.75rem;
+}
+
+body::before {
+  content: "";
+  position: fixed;
+  inset: 0;
+  background: rgba(0, 0, 0, 0);
+  z-index: 2;
+  pointer-events: none;
 }
 
 /*# sourceMappingURL=style.css.map */
