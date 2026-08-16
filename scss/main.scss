@@ -1,15 +1,10 @@
+@use "utilities/mixins" as *;
 @use "base/variables" as *;
 @use "base/tipografia" as *;
 @use "components/buttons" as *;
 @use "layout/header";
 @use "layout/footer" as *;
-@use "utilities/mixins" as * ;
 @use "components/cards" as * ;
-
-
-$color-primario: #fcf8a6;
-$color-secundario: #f9ff4aba;
-$fuente-principal: "Abel", sans-serif;
 
  
  .logo{
@@ -73,4 +68,12 @@ body::before {
 .hero__content {
   position: relative;
   z-index: 2;
+}
+
+.btn-primary {
+  @include button-variant($bg: #0d6efd, $color: #ffffff);
+}
+
+.btn-secondary {
+  @include button-variant($bg: transparent, $color: #ffffff, $border: rgba(255,255,255,0.25));
 }

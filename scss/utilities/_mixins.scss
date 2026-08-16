@@ -1,0 +1,26 @@
+@mixin button-variant(
+  $bg,
+  $color,
+  $border: transparent,
+  $hover-bg: null
+) {
+  background-color: $bg;
+  color: $color;
+  border: 1px solid $border;
+
+  padding: 0.75rem 1.25rem;
+  border-radius: 12px;
+  text-decoration: none;
+  display: inline-block;
+  font-weight: 600;
+  cursor: pointer;
+
+  @if $hover-bg == null {
+    $hover-bg: mix($bg, #000, 15%);
+  }
+
+  &:hover {
+    background-color: $hover-bg;
+    border-color: $border;
+  }
+}
