@@ -10,7 +10,6 @@
    ========================= */
 body {
   font-family: "Abel", sans-serif;
-  color: rgba(249, 255, 74, 0.7294117647);
   background-image: url("../assets/fondo.jpg");
   background-size: cover;
   background-position: center;
@@ -61,13 +60,6 @@ footer {
 .btn:hover {
   opacity: 1;
 }
-/* Error: Undefined variable.
- *   ,
- * 3 |   color: $color-primario
- *   |          ^^^^^^^^^^^^^^^
- *   '
- *   scss\layout\_footer.scss 3:10  @use
- *   scss\main.scss 6:1             root stylesheet */
 
 /* Layout Header / Hero */
 .header-principal {
@@ -143,14 +135,7 @@ body::before {
 .imagen-inicio img {
   max-width: 80%;
   height: auto;
-  font-family: "Source Code Pro", "SF Mono", Monaco, Inconsolata, "Fira Mono",
-      "Droid Sans Mono", monospace, monospace;
-  white-space: pre;
   display: block;
-  padding: 1em;
-  margin-bottom: 1em;
-  border-bottom: 2px solid black;
-  content: "Error: Undefined variable.\a   \2577 \a 3 \2502    color: $color-primario\d\a   \2502           ^^^^^^^^^^^^^^^\a   \2575 \a   scss\\layout\\_footer.scss 3:10  @use\a   scss\\main.scss 6:1             root stylesheet";
 }
 
 .imagen-index {
@@ -171,7 +156,6 @@ body::before {
 
 .section-principal {
   padding: 40px 24px;
-  color: #f0f8ff;
 }
 
 .header-principal {
@@ -180,8 +164,6 @@ body::before {
 
 footer {
   grid-area: footer;
-  color:#f0f8ff ;
-
 }
 
 .habilidades {
@@ -252,6 +234,55 @@ body::before {
   background: rgba(0, 0, 0, 0);
   z-index: 2;
   pointer-events: none;
+}
+
+.hero {
+  position: relative;
+}
+
+.hero::before {
+  content: "";
+  position: absolute;
+  inset: 0;
+  background: rgba(0, 0, 0, 0.4);
+  z-index: 1;
+}
+
+.hero__content {
+  position: relative;
+  z-index: 2;
+}
+
+.btn-primary {
+  background-color: #0d6efd;
+  color: #ffffff;
+  border: 1px solid transparent;
+  padding: 0.75rem 1.25rem;
+  border-radius: 12px;
+  text-decoration: none;
+  display: inline-block;
+  font-weight: 600;
+  cursor: pointer;
+}
+.btn-primary:hover {
+  background-color: rgb(0.7647058824%, 6.4705882353%, 14.8823529412%);
+  border-color: transparent;
+}
+
+.btn-secondary {
+  background-color: transparent;
+  color: rgba(255, 226, 36, 0.9333333333);
+  border: 1px solid rgba(255, 255, 255, 0.25);
+  padding: 0.75rem 1.25rem;
+  border-radius: 12px;
+  text-decoration: none;
+  display: inline-block;
+  font-weight: 600;
+  cursor: pointer;
+}
+.btn-secondary:hover {
+  background-color: rgba(0, 0, 0, 0.85);
+  border-color: rgba(255, 255, 255, 0.25);
 }
 
 /*# sourceMappingURL=style.css.map */
