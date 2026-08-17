@@ -1,0 +1,53 @@
+
+*{
+  margin: 10px;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+/* =========================
+   2) Base (body, tipografías)
+   ========================= */
+body{
+  font-family: "Abel", sans-serif;
+  
+  background-image: url("../assets/fondo.jpg");
+  background-size: cover;
+  background-position: center;
+  background-attachment: fixed;
+}
+
+h1, h2, h3 { color: var(#fcf8a6); }
+
+
+.header-principal{ grid-area: header; }
+main{ grid-area: main; } 
+
+footer{
+  grid-area: footer;
+}
+
+.page-grid{
+    grid-template-rows: auto 1fr auto;
+     display: grid;
+  grid-template-areas:
+    "header"
+    "main"
+    "footer";
+  grid-template-rows: auto 1fr auto;
+  }
+
+  #inicio .contenido-inicio{
+  display: grid;
+  grid-template-columns: 1fr; /* mobile base */
+  gap: 24px;
+  align-items: center;
+  justify-items: start;
+  color: #f0f8ff;
+}
+
+@media (min-width: 1024px){
+  #inicio .contenido-inicio{
+    grid-template-columns: 1fr 1fr;
+  }
+}
