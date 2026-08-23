@@ -265,7 +265,7 @@ body::before {
   cursor: pointer;
 }
 .btn-primary:hover {
-  background-color: rgb(0.7647058824%, 6.4705882353%, 14.8823529412%);
+  background-color: rgb(0.6091288975%, 30.1518804243%, 73.7045965927%);
   border-color: transparent;
 }
 
@@ -281,8 +281,9 @@ body::before {
   cursor: pointer;
 }
 .btn-secondary:hover {
-  background-color: rgba(0, 0, 0, 0.85);
+  background-color: rgba(255, 255, 255, 0.08);
   border-color: rgba(255, 255, 255, 0.25);
 }
+
 
 /*# sourceMappingURL=style.css.map */

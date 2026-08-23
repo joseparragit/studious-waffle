@@ -1,9 +1,4 @@
-@mixin button-variant(
-  $bg,
-  $color,
-  $border: transparent,
-  $hover-bg: null
-) {
+@mixin button-variant($bg, $color, $border: transparent, $hover-bg: null) {
   background-color: $bg;
   color: $color;
   border: 1px solid $border;
@@ -16,7 +11,11 @@
   cursor: pointer;
 
   @if $hover-bg == null {
-    $hover-bg: mix($bg, #000, 15%);
+    @if $bg == transparent {
+      $hover-bg: rgba(255, 255, 255, 0.08); // o el que quieras
+    } @else {
+      $hover-bg: darken($bg, 15%);
+    }
   }
 
   &:hover {
