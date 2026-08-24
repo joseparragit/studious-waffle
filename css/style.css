@@ -53,12 +53,53 @@ footer {
     grid-template-columns: 1fr 1fr;
   }
 }
-.btn {
-  background: var(--primario);
-  color: var(--secundario);
+@keyframes appearUp {
+  from {
+    opacity: 0;
+    transform: translateY(14px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
 }
-.btn:hover {
-  opacity: 1;
+.anim-btn {
+  animation: appearUp 0.6s ease both;
+  transition: transform 0.2s ease, box-shadow 0.2s ease, background-color 0.2s ease;
+  will-change: transform;
+}
+
+.anim-btn:hover {
+  transform: translateY(-3px) scale(1.02);
+  box-shadow: 0 10px 30px rgba(0, 0, 0, 0.25);
+}
+
+.anim-btn:active {
+  transform: translateY(-1px) scale(0.99);
+}
+
+.anim-btn:nth-child(1) {
+  animation-delay: 0s;
+}
+
+.anim-btn:nth-child(2) {
+  animation-delay: 0.05s;
+}
+
+.anim-btn:nth-child(3) {
+  animation-delay: 0.1s;
+}
+
+.anim-btn:nth-child(4) {
+  animation-delay: 0.15s;
+}
+
+.anim-btn:nth-child(5) {
+  animation-delay: 0.2s;
+}
+
+.anim-btn:nth-child(6) {
+  animation-delay: 0.25s;
 }
 
 /* Layout Header / Hero */
@@ -190,6 +231,14 @@ footer {
   object-fit: contain;
 }
 
+@media (max-width: 576px) {
+  .header-principal {
+    gap: 12px;
+    padding: 16px 16px;
+    flex-wrap: wrap;
+    min-height: auto;
+  }
+}
 .logo {
   width: 150px;
   height: auto;
@@ -284,6 +333,5 @@ body::before {
   background-color: rgba(255, 255, 255, 0.08);
   border-color: rgba(255, 255, 255, 0.25);
 }
-
 
 /*# sourceMappingURL=style.css.map */

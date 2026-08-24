@@ -17,6 +17,7 @@ Este portafolio es una página personal para presentar mi perfil como Desarrolla
 - Bootstrap 
 - SCSS
 - SASS
+- aOs
 
 
 ## Objetivo
